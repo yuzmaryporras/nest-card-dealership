@@ -28,11 +28,15 @@ src/
 ├── main.ts               # Entry point
 │
 ├── cars/                  # Cars module
+│   ├── dto/
+│     ├── create-car.dto.ts
+│   ├── interfaces/
+│     ├── car.interface.ts
 │   ├── cars.module.ts
 │   ├── cars.controller.ts
 │   └── cars.service.ts
 │
-└── ...                   # Future modules (auth, user, etc.)
+└── ...
 ```
 
 ---
@@ -42,6 +46,8 @@ src/
 - Creating and using **modules** with `@Module()`
 - Defining **controllers** that respond to routes like `GET /cars/:id`
 - Using decorators such as `@Get()`, `@Post()`, `@Param()`, `@Body()`, etc.
+- Creating and validating **DTOs (Data Transfer Objects)** with `class-validator` to ensure input data is structured and correct
+- Defining **interfaces** to describe the shape of data and improve type safety across the application
 
 ---
 
