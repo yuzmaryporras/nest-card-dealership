@@ -1,3 +1,7 @@
+<p align='center'>
+    <a href='http://nestjs.com/' target='blank'><img src='https://nestjs.com/img/logo-small.svg' width='200px' alt='Nest Logo'>
+</p>
+
 # 🚗 Car Dealership API - Learning NestJS
 
 This project is an API built with [NestJS](https://nestjs.com/) for the purpose of learning the framework and practicing concepts such as modules, controllers, parameterized routes, and services.
@@ -45,6 +49,13 @@ src/
 │   ├── brands.controller.ts
 │   └── brands.service.ts
 │
+├── seed/                  # Seed module
+│   ├── data/
+│     ├── brand.seed.ts
+│     ├── car.seed.ts
+│   ├── seed.module.ts
+│   ├── seed.controller.ts
+│   └── seed.service.ts
 └── ...
 ```
 
@@ -75,6 +86,13 @@ cd car-dealership
 npm install
 ```
 
+3. Execute seed:
+
+Populate BD
+```bash
+ http://localhost:3000/seed
+```
+
 3. Run the server in development mode:
 
 ```bash
@@ -83,3 +101,9 @@ npm run start:dev
 
 4. Open in browser or use Postman at `http://localhost:3000`
 
+
+## 📬 Postman Collection
+
+You can import the included **Postman collection** to test all available API requests easily.
+
+- File: `postman/car-dealership.postman_collection.json`
