@@ -35,6 +35,15 @@ src/
 │   ├── cars.module.ts
 │   ├── cars.controller.ts
 │   └── cars.service.ts
+├── brands/                  # Brands module
+│   ├── dto/
+│     ├── create-brands.dto.ts
+│     ├── update-brands.dto.ts
+│   ├── entities/
+│     ├── brands.entity.ts
+│   ├── brands.module.ts
+│   ├── brands.controller.ts
+│   └── brands.service.ts
 │
 └── ...
 ```
@@ -48,7 +57,7 @@ src/
 - Using decorators such as `@Get()`, `@Post()`, `@Param()`, `@Body()`, etc.
 - Creating and validating **DTOs (Data Transfer Objects)** with `class-validator` to ensure input data is structured and correct
 - Defining **interfaces** to describe the shape of data and improve type safety across the application
-
+- Creating entities to define structure of table in BD
 ---
 
 ## ▶️ How to Run the Project
